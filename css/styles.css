@@ -16,6 +16,11 @@ body {
   margin: 0 auto;
 }
 
+.wrapper-articles {
+  max-width: 75vw;
+  margin: 0 auto;
+}
+
 .header {
   background-color: #1c2431;
   font-family: "Raleway", sans-serif;
@@ -72,18 +77,22 @@ body {
 }
 
 .header .illustration-intro {
-  width: 400px;
-  margin-bottom: 10px;
+  width: 90%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .header h1 {
-  margin: 0px 60px;
+  margin: 0px 40px;
   text-align: center;
   line-height: 45px;
   position: relative;
+  top: 50px;
+}
+
+.main .main-content {
+  margin-top: 70px;
 }
 
 .main .main-content .entry {
