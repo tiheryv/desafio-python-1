@@ -1,0 +1,24 @@
+.main{
+    
+    .main-content{
+    
+        .entry{
+            text-align: center; 
+            font-size: $font-size-body;
+
+            .button{
+                color: $neutral;
+                background-color: $accent-cyan;
+                padding: 15px 120px;
+                border-radius: 40px;
+                border:none;
+                font-weight: 700;
+            }
+
+            
+            
+
+            
+        }
+    }
+}
