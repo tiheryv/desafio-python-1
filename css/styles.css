@@ -21,6 +21,11 @@ body {
   margin: 0 auto;
 }
 
+.wrapper-profiles {
+  max-width: 65vw;
+  margin: 0 auto;
+}
+
 .header {
   background-color: #1c2431;
   font-family: "Raleway", sans-serif;
@@ -100,12 +105,39 @@ body {
   font-size: 14px;
 }
 
+.main .main-content .entry p {
+  line-height: 25px;
+  margin: 20px;
+}
+
 .main .main-content .entry .button {
   color: white;
   background-color: #65e2d9;
-  padding: 15px 120px;
+  width: 80%;
+  padding: 15px 0;
   border-radius: 40px;
   border: none;
   font-weight: 700;
+  margin: 20px;
+}
+
+.articles {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  line-height: 25px;
+  padding: 10px;
+}
+
+.articles .article {
+  margin: 70px 0;
+}
+
+.last-entry .illustration-stay-productive {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.last-entry h3 {
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
