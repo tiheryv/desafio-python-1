@@ -5,7 +5,23 @@
         margin: 0 auto;
     }
 
-    h3{
-        text-align: center;
+    h2{
+        margin: 20px 0;
+        font-family:$font-headings;
+    }
+
+    p{
+        margin: 20px 0;
+        font-family: $font-body;
+    }
+
+    a{
+        color: $accent-cyan;
+        background-color: none;
+        text-decoration: none;
+    }
+
+    hr{
+        margin-top: 5px;
     }
 }

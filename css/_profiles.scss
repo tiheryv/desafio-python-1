@@ -1,0 +1,34 @@
+.profiles{
+    padding: 150px 0;
+
+    .quotes-img{
+        width: 25px;
+        position: absolute;
+    }
+    .profile-cards{
+       
+        article{
+            background-color: $testimonials-darkblue;
+            font-size: small;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px 0;
+            line-height: 20px;      
+        }
+
+        .profile-content{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img{
+                width: 10%;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+            .profile-description{
+                margin:10px 0;
+            }
+        }
+    }
+}
