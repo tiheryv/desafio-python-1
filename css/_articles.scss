@@ -3,19 +3,48 @@
     text-align: center;
     line-height: 25px;
     padding: 10px;
-    
-    
+     
     .article{
-        margin: 70px 0; 
-        
+        margin: 70px 0;
         h3{
             margin: 10px;
         }
         img{
             margin: 20px;
         }
-
     }
+}
+@media only screen and (min-width: 1024px){
+    .articles{
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        grid-template-areas:    
+                "access security"
+                "collab store"
+            ;
+        padding: 50px 0 100px 0;
 
+        .article{
+            
+            margin: 20px 50px;
 
+            .article-access{
+                grid-area: access;
+            }
+
+            .article-security{
+                grid-area: security;
+            }
+
+            .article-collab{
+                grid-area: collab;
+            }
+
+            .article-store{
+                grid-area: store;
+            }
+            
+        }
+    }
 }

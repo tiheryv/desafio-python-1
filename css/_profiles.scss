@@ -1,6 +1,6 @@
 .profiles{
     padding: 150px 0;
-
+    margin-bottom: 150px;
     .quotes-img{
         width: 25px;
         position: absolute;
@@ -27,7 +27,18 @@
                 margin-right: 20px;
             }
             .profile-description{
-                margin:10px 0;
+                margin: 10px 0;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1024px){
+    .profiles{
+        .profile-cards{
+            display: flex;
+            margin: 0 20px;
+            article{
+                margin: 0px 20px;
             }
         }
     }

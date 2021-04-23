@@ -11,16 +11,19 @@
                 margin: 20px;
                 
             }
-            .button{
+            
+        }
+    }
+}
+@media only screen and (min-width: 1024px){
 
-                color: $neutral;
-                background-color: $accent-blue;
-                width: 80%;
-                padding: 15px 0;
-                border-radius: 40px;
-                border:none;
-                font-weight: 700;
-                margin: 20px;
+    .main{  
+        .main-content{    
+            .entry{
+                p{
+                    margin: 20px 200px;
+                }
+                
             }
         }
     }

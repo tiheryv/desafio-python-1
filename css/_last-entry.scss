@@ -25,3 +25,27 @@
         margin-top: 5px;
     }
 }
+@media only screen and (min-width: 1024px){
+    .last-entry{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "illustration productive-content"
+        ;
+        
+        .illustration-stay-productive{
+            width: 70%;
+            grid-area:illustration;
+        }
+
+        .productive-content{
+            grid-area: productive-content;
+            a{
+                &:hover{
+                    color: $neutral;
+                }
+            }
+        }
+        
+    }
+}

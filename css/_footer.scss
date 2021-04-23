@@ -1,66 +1,167 @@
 
 footer{
     background-color: $footer-darkblue;
-
-
-.footer{
     
-    .contact-section{
-        .contact-info{
-            margin: 15px;
-            img{
-                position: absolute;
-                margin-right: 20px;
-                margin-top: 5px; 
-            }
-            .icon-phone{
-                width: 15px;
-            }
-        }
-    }
-
-    .about-us{
+    .form-box{
         display: flex;
         flex-direction: column;
-        margin: 100px 0;
-
-        
-        a{
-            text-decoration: none;
-            color: $neutral;
-            margin: 10px;
-        }   
-    }
-    .terms-privacy{
-        display: flex;
-        flex-direction: column;
-        margin: 70px 0;
-        a{
-            text-decoration: none;
-            color: $neutral;
-            margin: 10px;
-
-        }
-    }    
-    .social-media{
-        display: flex;
+        align-items: center;
         justify-content: center;
-        margin: 25px;
-        li{
-            list-style: none;
-            border:1px solid white;
-                border-radius: 50%;
-                width: 40px;
-	            height: 40px;
-                padding: 12px;
-                margin: 8px;
-                position: relative;
-                bottom: 15px;
-            i{
-                
-                
+        text-align: center;
+        background-color: $intro-darkblue;
+        border-radius: 10px;
+        width: 80vw;
+        height: 400px;
+        padding: 25px;
+        box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: .3);
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        position: relative;
+        top:-200px;
+        .form-content{
+             margin: 15px;
+        }
+        h2{
+            font-family: $font-headings;
+        }
+        input{
+            width: 80%;
+            padding: 15px 30px;
+            border-radius: 40px;
+            border:none;
+            
+        }
+    }
+    .footer{
+        margin-top: -100px;
+
+        .location-section{
+            .location-info{
+                margin: 15px;
+                img{
+                    position: absolute;
+                    margin-right: 20px;
+                    margin-top: 10pxpx; 
+                }
             }
         }
-    }     
+        .contact-section{
+    
+            .contact-info{
+                margin: 15px;
+                img{
+                    position: absolute;
+                    margin-right: 20px;
+                    margin-top: 5px; 
+                }
+                .icon-phone{
+                    width: 15px;
+                }
+            }
+        }
+
+        .about-us{
+            display: flex;
+            flex-direction: column;
+            margin: 100px 0;
+
+            
+            a{
+                text-decoration: none;
+                color: $neutral;
+                margin: 10px;
+            }   
+        }
+        .terms-privacy{
+            display: flex;
+            flex-direction: column;
+            margin: 70px 0;
+            a{
+                text-decoration: none;
+                color: $neutral;
+                margin: 10px;
+
+            }
+        }    
+        .social-media{
+            display: flex;
+            justify-content: center;
+            margin: 25px;
+            list-style: none;
+            i{
+                    border:1px solid white;
+                    border-radius: 50%;
+                    width: 40px;
+                    height: 40px;
+                    padding: 12px;
+                    margin: 8px;
+                    position: relative;
+                    bottom: 15px;
+            }
+        }     
+    }
 }
+
+@media only screen and (min-width: 1024px){
+    footer{
+        .form-box{
+            width: 60vw;
+            height: 300px;
+            padding: 25px 50px;
+            
+            top: -150px;
+            align-items: stretch;
+
+            input{
+                width: 70%;
+            }
+            button{
+                width: 30%; 
+            }
+            .input-box{
+                display: flex;
+            }
+        }
+        
+        .footer{
+
+            display:grid;
+            grid-template-columns: 250px 250px 1fr 1fr 1fr;
+            grid-template-areas: 
+                "img-logo img-logo img-logo img-logo img-logo"
+                "location-section contact-section about-us terms-privacy social-media"
+            ;
+
+            .logo{
+                width: 10%;
+                grid-area: img-logo;
+                margin: 25px;
+            }
+            .location-section{
+                grid-area: location-section;
+                margin: 0;
+            }
+            .contact-section{
+                grid-area: contact-section;
+                margin: 0;
+            }
+            .about-us{
+                grid-area: about-us;
+                margin: 0;
+            }
+
+            .terms-privacy{
+                grid-area: terms-privacy;
+                margin: 0;
+            }
+            .social-media{
+                grid-area: social-media;
+                margin: 0;
+                i{
+                   margin-top: 25px; 
+                }
+            }
+        }
+    }
+    
 }
+    
